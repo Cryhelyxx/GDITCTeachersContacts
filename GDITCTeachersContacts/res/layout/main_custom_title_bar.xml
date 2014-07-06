@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/topbar" >
+
+    <ImageView
+        android:id="@+id/title_bar_Icon"
+        android:layout_width="33dip"
+        android:layout_height="33dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:contentDescription="@string/descImage"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/title_bar_Icon"
+        android:drawablePadding="4dp"
+        android:text="@string/app_name"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/title_bar_btnSearch"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/title_bar_btn_add_contact"
+        android:background="@drawable/btn_search_contact_selector" />
+
+    <Button
+        android:id="@+id/title_bar_btn_add_contact"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/title_bar_btn_option_menu"
+        android:background="@drawable/btn_add_contact_selector" />
+
+    <Button
+        android:id="@+id/title_bar_btn_option_menu"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/btn_more_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popupwindow"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnSystemContacts"
+        android:layout_width="49dip"
+        android:layout_height="49dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_system_contacts" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_email" />
+
+    <Button
+        android:id="@+id/btnWeixin"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_weixin" />
+    <Button
+        android:id="@+id/btnShareMore"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_margin="10dip"
+        android:background="@drawable/btn_share_more" />
+
+</LinearLayout>

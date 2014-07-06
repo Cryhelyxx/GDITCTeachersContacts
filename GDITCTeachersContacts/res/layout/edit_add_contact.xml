@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/add_contact_custom_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/default_bg"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <org.gditc.contacts.view.PhotoEditorView
+                    android:id="@+id/contact_icon"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/btn_contact_picture"
+                    android:clickable="true"
+                    android:cropToPadding="true"
+                    android:focusable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/contact_add_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dip"
+                        android:text="@string/contact_name"
+                        android:textColor="#f00"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/add_edit_text_field"
+                        android:hint="@string/tip_contact_name"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_telPhone"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/contact_telPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/add_edit_text_field"
+                    android:hint="@string/tip_contact_telPhone"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_cornet"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/contact_cornet"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/add_edit_text_field"
+                    android:hint="@string/tip_contact_cornet"
+                    android:inputType="phone"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_group"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/contact_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/spinner_selector"
+                    android:drawingCacheQuality="auto"
+                    android:prompt="@string/tip_contact_group"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_email"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/contact_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/add_edit_text_field"
+                    android:hint="@string/tip_contact_email"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_address"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/contact_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/add_edit_text_field"
+                    android:hint="@string/tip_contact_address"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_birthday"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/contact_birthday_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/contact_birthday"
+                    android:textColor="#000"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0px"
+                android:layout_marginRight="15.0px"
+                android:layout_marginTop="20.0px"
+                android:background="@drawable/layout_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/contact_description"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/contact_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/add_edit_text_field"
+                    android:gravity="left|top"
+                    android:hint="@string/tip_contact_description"
+                    android:inputType="none"
+                    android:maxLength="80"
+                    android:maxLines="5"
+                    android:minLines="5"
+                    android:singleLine="false"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAF8ED"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/button_selector"
+            android:text="@string/btn_cancel"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/button_selector"
+            android:text="@string/btn_ok"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>
