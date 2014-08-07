@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="2.0dip"
+    android:paddingTop="2.0dip" >
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/RandD"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16.0dip" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/groupCount"
+        android:layout_width="wrap_content"
+        android:layout_height="30.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/groupCount"
+        android:textColor="#4DFFFFFF"
+        android:textSize="14.0dip" >
+    </TextView>
+
+</LinearLayout>
