@@ -8,28 +8,28 @@
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
 
         <!-- API 14 theme customizations can go here. -->
-        <item name="android:actionBarStyle">@style/ContactsActionBar</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
         <item name="android:itemBackground">@drawable/actionbar_bg_selector</item>
         <item name="android:actionBarItemBackground">@drawable/actionbar_bg_selector</item>
-        <item name="android:itemTextAppearance">@style/ContactsActionBarOverflow</item>
-        <item name="android:actionOverflowButtonStyle">@style/ContactsActionButtonOverflow</item>
+        <item name="android:itemTextAppearance">@style/ActionBarOverflow</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionButtonOverflow</item>
     </style>
 
-    <style name="ContactsActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">#303537</item>
-        <item name="android:titleTextStyle">@style/ContactsActionBarTitleText</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
     </style>
 
-    <style name="ContactsActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <style name="ActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">#cfcfcf</item>
         <item name="android:textSize">17sp</item>
     </style>
     
-    <style name="ContactsActionBarOverflow" parent="@android:style/Widget.ActionButton.Overflow">
+    <style name="ActionBarOverflow" parent="@android:style/Widget.ActionButton.Overflow">
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="ContactsActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+    <style name="ActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/actionbar_more_icon</item>
     </style>
 

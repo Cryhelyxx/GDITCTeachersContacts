@@ -260,6 +260,10 @@ public final class R {
         public static final int use_picture_as_primary=0x7f07001e;
     }
     public static final class style {
+        public static final int ActionBar=0x7f050004;
+        public static final int ActionBarOverflow=0x7f050006;
+        public static final int ActionBarTitleText=0x7f050005;
+        public static final int ActionButtonOverflow=0x7f050007;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -286,11 +290,8 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050003;
-        public static final int ContactsActionBar=0x7f050004;
-        public static final int ContactsActionBarOverflow=0x7f050006;
-        public static final int ContactsActionBarTitleText=0x7f050005;
-        public static final int ContactsActionButtonOverflow=0x7f050007;
         /**  修改背景 
+ <item name="android:background">@drawable/topbar</item> 
          */
         public static final int TitleBarBackground=0x7f050000;
         public static final int custom_title_bar_theme=0x7f050001;

@@ -10,7 +10,6 @@
         android:title="@string/action_search_contact"/>
     <item
         android:id="@+id/action_add_contact"
-        android:actionProviderClass="com.example.wechatsample.PlusActionProvider"
         android:icon="@drawable/actionbar_add_icon"
         android:showAsAction="ifRoom"
         android:title="@string/action_add_contact"/>

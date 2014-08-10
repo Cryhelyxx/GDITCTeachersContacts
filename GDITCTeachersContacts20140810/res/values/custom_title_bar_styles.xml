@@ -2,8 +2,8 @@
 
     <!-- 修改背景 -->
     <style name="TitleBarBackground">
-        <!-- <item name="android:background">@color/title_bar_bgColor</item> -->
-        <item name="android:background">@drawable/topbar</item>
+        <item name="android:background">@color/title_bar_bgColor</item>
+        <!-- <item name="android:background">@drawable/topbar</item> -->
     </style>
 
     <style name="custom_title_bar_theme" parent="android:Theme">
