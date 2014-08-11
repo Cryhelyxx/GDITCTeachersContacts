@@ -415,9 +415,11 @@ public class SearchContactActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+		cursor = db.getAllContacts();
+		SourceDateList = filledData();
 		keywords = et_searchContact.getText().toString().trim();
-		if (keywords == null) {
-			initData();
+		if (keywords != null) {
+			filterData(keywords);
 		}
 	}
 

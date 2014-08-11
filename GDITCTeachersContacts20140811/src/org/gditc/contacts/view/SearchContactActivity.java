@@ -406,6 +406,20 @@ public class SearchContactActivity extends Activity {
 		Collections.sort(filterDateList, pinyinComparator);
 		adapter.updateListView(filterDateList);
 	}
+	
+	/**
+	 * Activity被覆盖后重新显示出来时自动刷新
+	 */
+	@Override
+	protected void onResume() {
+		super.onResume();
+		cursor = db.getAllContacts();
+		SourceDateList = filledData();
+		keywords = et_searchContact.getText().toString().trim();
+		if (keywords != null) {
+			filterData(keywords);
+		}
+	}
 
 
 	/*@Override

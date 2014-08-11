@@ -81,7 +81,7 @@ public class CopyTool {
 		File db_file = context.getDatabasePath(db_name);
 		File db_path = new File(db_file.getParent());
 		if (!db_path.exists()) {
-			db_path.mkdir();	// 如果数据库目录
+			db_path.mkdir();	// 如果数据库目录不存在， 则创建
 		}
 		if (!db_file.exists()) {
 			try {

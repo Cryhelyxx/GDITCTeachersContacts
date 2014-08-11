@@ -871,9 +871,6 @@ public class MainActivity extends ExpandableListActivity {
 		initData();
 	}
 
-
-
-
 	/**
 	 * 任何的按键都是 onKeyDown() 先接收的
 	 * 如果按的是 menu 键，应该返回 false ，表示让后面需要接收 menu 键的事件继续处理。
