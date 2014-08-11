@@ -49,9 +49,11 @@
                 <data android:mimeType="org.gditc.contacts/android.edit" />
             </intent-filter>
         </activity>
-        <activity android:name="org.gditc.contacts.view.SearchContactActivity" />
+        <activity android:name="org.gditc.contacts.view.SearchContactActivity"
+            android:theme="@style/CustomTheme" />
         <activity android:name="org.gditc.contacts.view.ContactInfoActivity" />
-        <activity android:name="org.gditc.contacts.view.MainActivity" />
+        <activity android:name="org.gditc.contacts.view.MainActivity"
+            android:theme="@style/CustomTheme" />
     </application>
 
 </manifest>

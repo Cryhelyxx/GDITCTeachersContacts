@@ -32,5 +32,9 @@
     <style name="ActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/actionbar_more_icon</item>
     </style>
+    
+    <style name="CustomTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
 
 </resources>

@@ -297,6 +297,9 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050003;
+        /**  API 14 theme customizations can go here. 
+         */
+        public static final int CustomTheme=0x7f050008;
         /**  修改背景 
  <item name="android:background">@drawable/topbar</item> 
          */
